@@ -2,6 +2,6 @@
 
 int main()
 {
-    printf("Hello from liunux");
+    printf("Hello world from linux\n");
     return 0;
 }
