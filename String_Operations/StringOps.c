@@ -41,14 +41,32 @@ int str_cat()
 {
     char s1[] = "Param";
     char s2[] = "Bhatt";
-
     printf("Before cat: %s %s\n",s1,s2);
 
-    printf("After cat: %s", strcat(s1,s2));
+   printf("After cat: %s", strcat(s1,s2));
+}
+
+
+int token()
+{
+    char a1[] = "Param Bhatt";
+    char *test;
+
+    printf("Entered token function...\n");
+    test = strtok(a1,",");
+
+    while (test != NULL)
+    {
+        printf("%s\n",test);
+        test = strtok(NULL,",");
+    }
+    
+    return 0;
 }
 void main()
 {
     str_len();
     str_cpy();  
     str_cat();
+    token();
 }   
